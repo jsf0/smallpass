@@ -1,0 +1,43 @@
+.\"
+.\"Copyright (c) 2019 Joseph Fierro <joseph.fierro@runbox.com>
+.\"
+.\"Permission to use, copy, modify, and distribute this software for any
+.\"purpose with or without fee is hereby granted, provided that the above
+.\"copyright notice and this permission notice appear in all copies.
+.\"
+.\"THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+.\"WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+.\"MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+.\"ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+.\"WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+.\"ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+.\"OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.Dd $Mdocdate: March 2 2019 $
+.Dt SMALLPASS 1
+.Os
+.Sh NAME
+.Nm smallpass
+.Nd small, simple Diceware passphrase generator
+.Sh SYNOPSIS
+.Nm smallpass
+.Fl h 
+.Nm smallpass
+.Op Fl n Ar length
+.Sh DESCRIPTION
+The
+.Nm
+utility generates a memorable Diceware style passphrase of the desired length 
+from the Electronic Frontier Foundation's long wordlist.
+With no options,
+.Nm
+will output a 7 word passphrase, equivalent to about 90 bits. Each
+additional word adds about 12.9 bits of entropy.
+The following options select the operation:
+.Bl -tag -width Dsssigfile
+.It Fl h
+Print out usage information and exit
+.It Fl n Ar length 
+Specify the length of the passphrase. The 
+minimum is 1 and the maximum is 128.
+.El
+.Pp
