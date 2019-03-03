@@ -3,8 +3,15 @@
 smallpass is a small, simple utility for generating Diceware style passphrases on the command line. 
 It uses the Electronic Frontier Foundation's long wordlist.  
 
+### Rationale
+
+There are lots of these Diceware generators out there, but many of them are overly complicated, have large dependencies, or are insecure. 
+Smallpass is written in plain C, does not suffer from modulo bias, has no network functionality, doesn't parse any files, and has minimal 
+command line flags.
+This allows smallpass to be locked down tightly using pledge() on OpenBSD.
+
 ### Building
-smallpass builds with no dependencies on the BSDs. I haven't tried building on Linux, but you will probably want libbsd installed 
+smallpass builds without requiring any dependencies on the BSDs. I haven't tried building on Linux, but you will probably want libbsd installed 
 if you want to port it. 
 
 To build, run:
