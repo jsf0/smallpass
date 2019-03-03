@@ -30,6 +30,11 @@ static void usage(void);
 int
 main(int argc, char **argv)
 {
+	#ifdef __OpenBSD__
+        if ((pledge("stdio", NULL)) == -1)
+                err(1, "pledge");
+        #endif /* __OpenBSD__ */
+
 	uint32_t ch, length, n, i = 0;
 	const char *errstr;
 
