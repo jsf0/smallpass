@@ -4,7 +4,8 @@ smallpass is a small, simple utility for generating Diceware style passphrases o
 It uses the Electronic Frontier Foundation's long wordlist.  
 
 ### Building
-smallpass builds with no dependencies on the BSDs. On Linux, you will need libbsd installed. 
+smallpass builds with no dependencies on the BSDs. I haven't tried building on Linux, but you will probably want libbsd installed 
+if you want to port it. 
 
 To build, run:
 ```
