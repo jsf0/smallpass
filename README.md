@@ -11,8 +11,8 @@ command line flags.
 This allows smallpass to be locked down tightly using pledge() on OpenBSD.
 
 ### Building
-smallpass builds without requiring any dependencies on the BSDs. I haven't tried building on Linux, but you will probably want libbsd installed 
-if you want to port it. 
+smallpass builds without requiring any dependencies on the BSDs. On Linux you will need libbsd installed 
+(run "sudo apt-get install libbsd-dev" or the equivalent for your distribution). 
 
 To build, run:
 ```

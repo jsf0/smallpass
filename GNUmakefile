@@ -4,10 +4,11 @@ DESTDIR = /usr
 PREFIX = /local
 
 CFLAGS = -Wall -O3 -fstack-protector-strong -fPIC -fPIE -D_FORTIFY_SOURCE=2
+LFLAGS= -lbsd
 SRC = main.c
 
 smallpass: $(SRC)
-	$(CC) $(CFLAGS) $(SRC) -o smallpass
+	$(CC) $(CFLAGS) $(LFLAGS) $(SRC) -o smallpass
 
 clean:
 	rm smallpass

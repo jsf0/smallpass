@@ -16,8 +16,13 @@
 
 #include <err.h>
 #include <stdio.h>
+#include <stdint.h>
 #include <stdlib.h>
 #include <unistd.h>
+
+#ifdef __linux__
+	#include <bsd/bsd.h>
+#endif /* Linux */
 
 #include "eff_long.h"
 
