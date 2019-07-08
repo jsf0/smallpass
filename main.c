@@ -36,6 +36,8 @@ int
 main(int argc, char **argv)
 {
 	#ifdef __OpenBSD__
+	if ((unveil("/", "r")) == -1)
+		err(1, "unveil");
         if ((pledge("stdio", NULL)) == -1)
                 err(1, "pledge");
         #endif /* __OpenBSD__ */
