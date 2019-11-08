@@ -1,3 +1,5 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/742f6661fbe94112af08de993f91c648)](https://www.codacy.com/manual/jsfierro/smallpass?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jsfierro/smallpass&amp;utm_campaign=Badge_Grade)
+
 ## smallpass
 
 smallpass is a small, simple utility for generating Diceware style passphrases on the command line. 
